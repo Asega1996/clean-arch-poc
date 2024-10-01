@@ -1,0 +1,10 @@
+//jsconfig.json
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "esModuleInterop": true
+}
