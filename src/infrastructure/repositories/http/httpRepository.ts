@@ -1,5 +1,10 @@
 import { Http } from "domain/http";
-import { delVerb, getVerb, postVerb, putVerb } from "utils/apiVerbs";
+import {
+  delVerb,
+  getVerb,
+  postVerb,
+  putVerb,
+} from "infrastructure/api/utils/apiVerbs";
 
 export const httpRepository: Http = {
   get: async <T>(path: string) => {

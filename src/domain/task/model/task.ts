@@ -3,10 +3,10 @@ export type Task = {
   title: string;
   isCompleted: boolean;
   complexity: TaskComplexity;
-  completedAt: null | Date;
+  completedAt: null | string;
 };
 
-enum TaskComplexity {
+export enum TaskComplexity {
   SIMPLE,
   COMPLEX,
 }
