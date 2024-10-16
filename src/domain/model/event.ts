@@ -8,4 +8,5 @@ export type Event = {
   eventGroup: EventGroup;
   updatedAt: null | string;
   createdAt: string;
+  createdBy: string;
 };

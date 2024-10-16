@@ -1,66 +1,64 @@
 {
-  "tasks": [
+  "events": [
     {
       "id": "1",
-      "title": "My task 1",
-      "isCompleted": false,
-      "complexity": 1,
-      "completedAt": null
+      "message": "Evento 1",
+      "eventStatus": {
+        "id": 1,
+        "description": "UNREAD"
+      },
+      "eventGroup": {
+        "id": 0,
+        "description": "Grupo 1"
+      },
+      "updatedAt": "2024-10-16T13:47:53.081Z",
+      "createdAt": "2024-10-15T14:48:00.000Z",
+      "createdBy": "alejandrosgal"
     },
     {
       "id": "2",
-      "title": "My task 2",
-      "isCompleted": false,
-      "complexity": 1,
-      "completedAt": null
+      "message": "Evento 2",
+      "eventStatus": {
+        "id": 1,
+        "description": "UNREAD"
+      },
+      "eventGroup": {
+        "id": 0,
+        "description": "Grupo 1"
+      },
+      "updatedAt": null,
+      "createdAt": "2024-10-16T14:48:00.000Z",
+      "createdBy": "alejandrosgal"
     },
     {
       "id": "3",
-      "title": "My task 3",
-      "isCompleted": false,
-      "complexity": 1,
-      "completedAt": null
+      "message": "Evento 3",
+      "eventStatus": {
+        "id": 1,
+        "description": "UNREAD"
+      },
+      "eventGroup": {
+        "id": 0,
+        "description": "Grupo 1"
+      },
+      "updatedAt": null,
+      "createdAt": "2024-10-17T14:48:00.000Z",
+      "createdBy": "johndoe"
     },
     {
       "id": "4",
-      "title": "My task 4",
-      "isCompleted": false,
-      "complexity": 2,
-      "completedAt": null
-    }
-  ],
-  "events": [
-    {
-      "id": 1,
-      "message": "Evento 1",
-      "eventStatus": "UNREAD",
-      "eventGroup": { "id": 1, "description": "Grupo 1" },
-      "updatedAt": null,
-      "createdAt": "2024-10-15T14:48:00.000Z"
-    },
-    {
-      "id": 2,
-      "message": "Evento 2",
-      "eventStatus": "UNREAD",
-      "eventGroup": { "id": 1, "description": "Grupo 1" },
-      "updatedAt": null,
-      "createdAt": "2024-10-16T14:48:00.000Z"
-    },
-    {
-      "id": 3,
-      "message": "Evento 3",
-      "eventStatus": "UNREAD",
-      "eventGroup": { "id": 1, "description": "Grupo 1" },
-      "updatedAt": null,
-      "createdAt": "2024-10-17T14:48:00.000Z"
-    },
-    {
-      "id": 4,
       "message": "Evento 4",
-      "eventStatus": "UNREAD",
-      "eventGroup": { "id": 1, "description": "Grupo 1" },
+      "eventStatus": {
+        "id": 1,
+        "description": "UNREAD"
+      },
+      "eventGroup": {
+        "id": 0,
+        "description": "Grupo 1"
+      },
       "updatedAt": null,
-      "createdAt": "2024-10-14T14:48:00.000Z"
+      "createdAt": "2024-10-14T14:48:00.000Z",
+      "createdBy": "johndoe"
     }
   ]
 }

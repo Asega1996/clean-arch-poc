@@ -1,0 +1,41 @@
+.event-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+    max-width: 25rem
+}
+
+.event-card__title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+    text-align: center;
+    border-bottom: 1px solid white;
+    background-color: var(--color-background-primary);
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.event-card__author {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: lightgray;
+    text-align: center;
+    padding: 1rem;
+}
+
+.event-card__actions {
+    display: flex;
+    justify-content: center; 
+    gap: 1.6rem;
+    margin-bottom: 1.6rem;
+}

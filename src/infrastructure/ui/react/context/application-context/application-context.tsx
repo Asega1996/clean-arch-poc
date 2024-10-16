@@ -1,19 +1,21 @@
 import React, { useMemo } from "react";
 import { ApplicationContextTypes } from "./types";
-import { createHttpRepository } from "infrastructure/http/httpRepository";
+import { createHttpRepository } from "infrastructure/data-source/http/httpRepository";
+import { createLocalStorageRepository } from "infrastructure/data-source/local-storage/localStorageRepository";
 
 export const ApplicationContext = React.createContext<
   ApplicationContextTypes | undefined
 >(undefined);
 
 export const ApplicationContextProvider = ({ children }) => {
-  const httpInstance = createHttpRepository();
+  const httpClient = createHttpRepository();
+  // const localStorageClient = createLocalStorageRepository();
 
   const contextValue = useMemo<ApplicationContextTypes>(
     () => ({
-      httpClient: httpInstance,
+      dataSourceClient: httpClient,
     }),
-    [httpInstance]
+    [httpClient]
   );
 
   return (

@@ -10,17 +10,19 @@ import { createEventUseCaseImp } from "application/use-cases/create-event-uc-imp
 import { Event } from "domain/model/event";
 
 export const useEvents = () => {
-  const { invalidateQueries } = useQueryClient();
-  const { httpClient } = useApplicationContext();
+  const queryClient = useQueryClient();
+  const { dataSourceClient } = useApplicationContext();
 
-  const eventsApi = createEventsApi(httpClient);
+  const eventsApi = createEventsApi(dataSourceClient);
   const eventsRepo = useMemo(
     () => createEventsRepository(eventsApi),
     [eventsApi]
   );
 
   const onSuccessCallback = {
-    onSuccess: () => invalidateQueries({ queryKey: ["events"] }),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["events"] });
+    },
   };
 
   const { data } = useQuery({
@@ -29,7 +31,7 @@ export const useEvents = () => {
   });
 
   const { mutate: readEvent } = useMutation({
-    mutationFn: (task: Event) => readEventUseCaseImp(eventsRepo, task),
+    mutationFn: (event: Event) => readEventUseCaseImp(eventsRepo, event),
     ...onSuccessCallback,
   });
 

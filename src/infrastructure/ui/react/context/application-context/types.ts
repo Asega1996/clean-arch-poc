@@ -1,5 +1,5 @@
-import { Http } from "infrastructure/http/types";
+import { DataSource } from "infrastructure/data-source/types";
 
 export type ApplicationContextTypes = {
-  httpClient: Http;
+  dataSourceClient: DataSource;
 };

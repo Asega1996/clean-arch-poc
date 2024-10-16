@@ -1,0 +1,6 @@
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: space-between;
+}

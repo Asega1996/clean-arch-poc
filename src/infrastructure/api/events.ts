@@ -1,7 +1,7 @@
 import { Event } from "domain/model/event";
-import { Http } from "infrastructure/http/types";
+import { DataSource } from "infrastructure/data-source/types";
 
-const BASE_URL = "http://localhost:3001/events";
+const BASE_URL = "http://localhost:3001";
 
 export type EventApiTypes = {
   fetchAll: () => Promise<Event[]>;
@@ -10,27 +10,27 @@ export type EventApiTypes = {
   update: (event: Event) => Promise<Event>;
 };
 
-export const createEventsApi: (http: Http, url: string) => EventApiTypes = (
-  httpClient: Http,
-  url: string = BASE_URL
-) => {
+export const createEventsApi: (
+  dataSource: DataSource,
+  url?: string
+) => EventApiTypes = (dataSource: DataSource, url: string = BASE_URL) => {
   const fetchAll = async () => {
-    const res = await httpClient.get(url);
+    const res = await dataSource.list(url, "events");
 
     return await res.json();
   };
 
   const create = async (event: any) => {
-    const res = await httpClient.post(url, event);
+    const res = await dataSource.create(url, "events", event);
     return await res.json();
   };
 
   const remove = async (eventId: number) => {
-    await httpClient.del(url, eventId);
+    await dataSource.remove(url, "events", eventId);
   };
 
   const update = async (event: any) => {
-    const res = await httpClient.put(url, event);
+    const res = await dataSource.update(url, "events", event);
 
     return await res.json();
   };
