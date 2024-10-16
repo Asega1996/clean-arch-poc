@@ -28,5 +28,39 @@
       "complexity": 2,
       "completedAt": null
     }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "message": "Evento 1",
+      "eventStatus": "UNREAD",
+      "eventGroup": { "id": 1, "description": "Grupo 1" },
+      "updatedAt": null,
+      "createdAt": "2024-10-15T14:48:00.000Z"
+    },
+    {
+      "id": 2,
+      "message": "Evento 2",
+      "eventStatus": "UNREAD",
+      "eventGroup": { "id": 1, "description": "Grupo 1" },
+      "updatedAt": null,
+      "createdAt": "2024-10-16T14:48:00.000Z"
+    },
+    {
+      "id": 3,
+      "message": "Evento 3",
+      "eventStatus": "UNREAD",
+      "eventGroup": { "id": 1, "description": "Grupo 1" },
+      "updatedAt": null,
+      "createdAt": "2024-10-17T14:48:00.000Z"
+    },
+    {
+      "id": 4,
+      "message": "Evento 4",
+      "eventStatus": "UNREAD",
+      "eventGroup": { "id": 1, "description": "Grupo 1" },
+      "updatedAt": null,
+      "createdAt": "2024-10-14T14:48:00.000Z"
+    }
   ]
 }
