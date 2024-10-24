@@ -28,7 +28,7 @@ export const EventCard = (props: EventCardTypes) => {
   return (
     <div className="event-card">
       <h5 className="event-card__title">
-        {id} | {message}
+        {message}
         <span className="event-card__author">{createdBy}</span>
       </h5>
       <div className="event-card__content">
@@ -46,11 +46,9 @@ export const EventCard = (props: EventCardTypes) => {
           </button>
         )}
 
-        {createdBy === "alejandrosgal" && (
-          <button className="event-card__button" onClick={handleClickDelete}>
-            Delete Event
-          </button>
-        )}
+        <button className="event-card__button" onClick={handleClickDelete}>
+          Delete Event
+        </button>
       </div>
     </div>
   );

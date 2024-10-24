@@ -9,7 +9,7 @@ export const ApplicationContext = React.createContext<
 
 export const ApplicationContextProvider = ({ children }) => {
   const httpClient = createHttpRepository();
-  // const localStorageClient = createLocalStorageRepository();
+  //const localStorageClient = createLocalStorageRepository();
 
   const contextValue = useMemo<ApplicationContextTypes>(
     () => ({

@@ -9,11 +9,13 @@ import { deleteEventUseCaseImp } from "application/use-cases/delete-event-uc-imp
 import { createEventUseCaseImp } from "application/use-cases/create-event-uc-imp";
 import { Event } from "domain/model/event";
 
+const BASE_URL = "http://localhost:3001";
+
 export const useEvents = () => {
   const queryClient = useQueryClient();
   const { dataSourceClient } = useApplicationContext();
 
-  const eventsApi = createEventsApi(dataSourceClient);
+  const eventsApi = createEventsApi(dataSourceClient, BASE_URL);
   const eventsRepo = useMemo(
     () => createEventsRepository(eventsApi),
     [eventsApi]

@@ -1,8 +1,6 @@
 import { Event } from "domain/model/event";
 import { DataSource } from "infrastructure/data-source/types";
 
-const BASE_URL = "http://localhost:3001";
-
 export type EventApiTypes = {
   fetchAll: () => Promise<Event[]>;
   create: (event: Omit<Event, "id">) => Promise<Event>;
@@ -13,7 +11,7 @@ export type EventApiTypes = {
 export const createEventsApi: (
   dataSource: DataSource,
   url?: string
-) => EventApiTypes = (dataSource: DataSource, url: string = BASE_URL) => {
+) => EventApiTypes = (dataSource: DataSource, url: string) => {
   const fetchAll = async () => {
     const res = await dataSource.list(url, "events");
 

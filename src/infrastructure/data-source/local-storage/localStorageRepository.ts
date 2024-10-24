@@ -30,8 +30,6 @@ export const createLocalStorageRepository: () => DataSource = () => ({
       json: () => body,
     };
 
-    localStorage.setItem(entityName, JSON.stringify(response));
-
     return response as T;
   },
   update: async <T>(

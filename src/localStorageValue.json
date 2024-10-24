@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "message": "LocalStorage 1",
+    "eventStatus": {
+      "id": 1,
+      "description": "UNREAD"
+    },
+    "eventGroup": {
+      "id": 0,
+      "description": "Grupo 1"
+    },
+    "updatedAt": "2024-10-16T13:47:53.081Z",
+    "createdAt": "2024-10-15T14:48:00.000Z",
+    "createdBy": "alejandrosgal"
+  },
+  {
+    "id": "2",
+    "message": "LocalStorage 2",
+    "eventStatus": {
+      "id": 1,
+      "description": "UNREAD"
+    },
+    "eventGroup": {
+      "id": 0,
+      "description": "Grupo 1"
+    },
+    "updatedAt": null,
+    "createdAt": "2024-10-16T14:48:00.000Z",
+    "createdBy": "alejandrosgal"
+  },
+  {
+    "id": "3",
+    "message": "LocalStorage 3",
+    "eventStatus": {
+      "id": 1,
+      "description": "UNREAD"
+    },
+    "eventGroup": {
+      "id": 0,
+      "description": "Grupo 1"
+    },
+    "updatedAt": null,
+    "createdAt": "2024-10-17T14:48:00.000Z",
+    "createdBy": "johndoe"
+  },
+  {
+    "id": "4",
+    "message": "LocalStorage 4",
+    "eventStatus": {
+      "id": 1,
+      "description": "UNREAD"
+    },
+    "eventGroup": {
+      "id": 0,
+      "description": "Grupo 1"
+    },
+    "updatedAt": null,
+    "createdAt": "2024-10-14T14:48:00.000Z",
+    "createdBy": "johndoe"
+  }
+]
