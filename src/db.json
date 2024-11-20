@@ -46,19 +46,19 @@
       "createdBy": "johndoe"
     },
     {
-      "id": "4",
-      "message": "Evento 4",
+      "id": "369f",
+      "message": "Hola Demo",
+      "eventGroup": {
+        "id": 1,
+        "description": "Grupo 1"
+      },
       "eventStatus": {
         "id": 1,
         "description": "UNREAD"
       },
-      "eventGroup": {
-        "id": 0,
-        "description": "Grupo 1"
-      },
-      "updatedAt": null,
-      "createdAt": "2024-10-14T14:48:00.000Z",
-      "createdBy": "johndoe"
+      "createdAt": "2024-10-24T14:22:49.981Z",
+      "createdBy": "alejandrosgal",
+      "updatedAt": null
     }
   ]
 }
