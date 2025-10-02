@@ -1,6 +1,6 @@
-# Hexagonal Architecture POC
+# Clean Architecture POC
 
-This is a **proof of concept** of **Hexagonal Architecture / Clean Architecture** in a Frontend **React** app.  
+This is a **proof of concept** of **Clean Architecture / Hexagonal Architecture** in a Frontend **React** app.  
 The goal? Show how to build **clean, modular, and scalable application** and show that this type of architecture is not exclusive to the backend.
 
 ---
@@ -34,7 +34,7 @@ This project uses an ApplicationContext as DI (Dependency Injector), where you c
 npm install
 ```
 
-2. Choose a repository implementaion using [HTTP](https://github.com/Asega1996/hexagonal-arch-poc/blob/main/src/infrastructure/ui/react/context/application-context/application-context.tsx#11) or [localStorage](https://github.com/Asega1996/hexagonal-arch-poc/blob/main/src/infrastructure/ui/react/context/application-context/application-context.tsx#12).
+2. Choose a repository implementaion using [HTTP](https://github.com/Asega1996/clean-arch-poc/blob/main/src/infrastructure/ui/react/context/application-context/application-context.tsx#11) or [localStorage](https://github.com/Asega1996/clean-arch-poc/blob/main/src/infrastructure/ui/react/context/application-context/application-context.tsx#12).
 
 3. If you have choose HTTP you should setup the mocks for the request runing
 
